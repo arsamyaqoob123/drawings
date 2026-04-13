@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-    <title>MAaG · Drawing Library | BCP PDF Documents</title>
+    <title>MAG · Drawing Library | BCP PDF Documents & O&M Manuals</title>
     <!-- Modern fonts & icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,11 +63,6 @@
             height: 42px;
             width: auto;
             transition: opacity 0.2s;
-        }
-        .custom-logo-link-2 img {
-            height: 48px;
-            width: auto;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.02));
         }
 
         .header-meta {
@@ -542,7 +537,6 @@
             opacity: 0.9;
         }
 
-        /* Responsive */
         @media (max-width: 668px) {
             .site-branding {
                 padding: 0 16px;
@@ -552,9 +546,6 @@
             }
             .custom-logo-link img {
                 height: 32px;
-            }
-            .custom-logo-link-2 img {
-                height: 36px;
             }
             .container {
                 padding: 0 18px;
@@ -603,7 +594,6 @@
 </head>
 <body>
 <div id="page" class="site">
-    <!-- Fixed glass header -->
     <header id="masthead" class="site-header">
         <div class="site-branding">
             <div class="logo-group">
@@ -612,7 +602,6 @@
                 </a>
             </div>
             <div class="header-meta">
-                <!-- Clickable project badge that triggers popup -->
                 <span class="project-badge" id="projectSwitcherBtn">
                     <i class="far fa-building"></i> BCP 
                     <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
@@ -638,205 +627,519 @@
                 </div>
             </div>
 
-            <!-- Lighting drawings section -->
+            <!-- O&M Manuals section - 24 static cards -->
+            <section class="pdf-section" id="om-section-container">
+                <div class="section-head">
+                    <h2><i class="far fa-folder-open" style="margin-right: 12px; color: #f5b342;"></i>O&M Manuals</h2>
+                    <span class="section-count" id="om-count">24 manuals</span>
+                </div>
+                <div class="pdf-grid" id="om-grid">
+                    <!-- Card 1 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Emergency Generators</h3>
+                            <p>Operation & Maintenance – Emergency Generators · detailed procedures & schematics</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000001-Code%20B%20-%20Emergency%20Generators.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000001-Code%20B%20-%20Emergency%20Generators.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>MV Distribution</h3>
+                            <p>Operation & Maintenance – Medium Voltage Distribution · switchgear & protection</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000002-Code%20B%20-%20MV%20Distribution.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000002-Code%20B%20-%20MV%20Distribution.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Uninterruptible Power Supply (UPS)</h3>
+                            <p>Operation & Maintenance – UPS O&M Manual · battery & inverter care</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000003-Code%20B%20-%20Uninterruptible%20Power%20Supply%20(UPS)%20O_M%20Manual.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000003-Code%20B%20-%20Uninterruptible%20Power%20Supply%20(UPS)%20O_M%20Manual.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Earthing & Lightning Protection</h3>
+                            <p>Operation & Maintenance – Earthing & Lightning Protection · grounding systems</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000004-Code%20B%20-%20Earthing%20_%20Lightning%20Protection.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000004-Code%20B%20-%20Earthing%20_%20Lightning%20Protection.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Electric Vehicle Chargers</h3>
+                            <p>Operation & Maintenance – EV Chargers · installation & maintenance</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000005-Code%20B%20-%20Electric%20Vehicle%20Chargers.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000005-Code%20B%20-%20Electric%20Vehicle%20Chargers.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Emergency Lighting & Central Battery System</h3>
+                            <p>Operation & Maintenance – Emergency lighting & battery system</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000006-Code%20B%20-%20Emergency%20Lighting%20_%20Central%20Battery%20System.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000006-Code%20B%20-%20Emergency%20Lighting%20_%20Central%20Battery%20System.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Internal Lighting</h3>
+                            <p>Operation & Maintenance – Internal Lighting · fixtures & controls</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000007-Code%20B%20-%20Internal%20Lighting.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000007-Code%20B%20-%20Internal%20Lighting.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>External Lighting</h3>
+                            <p>Operation & Maintenance – External Lighting · landscape & facade lighting</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000008-Code%20B%20-%20External%20Lighting.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000008-Code%20B%20-%20External%20Lighting.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Low Voltage Distribution</h3>
+                            <p>Operation & Maintenance – LV Distribution · panels & switchboards</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000009-Code%20B%20-%20Low%20Voltage%20Distribution.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000009-Code%20B%20-%20Low%20Voltage%20Distribution.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 10 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Disabled Toilet Alarm</h3>
+                            <p>Operation & Maintenance – Disabled Toilet Alarm System</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000010-%20Code%20B%20-%20Disabled%20Toilet%20Alarm.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000010-%20Code%20B%20-%20Disabled%20Toilet%20Alarm.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 11 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Leak Detection System</h3>
+                            <p>Operation & Maintenance – Water leak detection & monitoring</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000011-%20Code%20B%20-%20Leak%20Detection%20System.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000011-%20Code%20B%20-%20Leak%20Detection%20System.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 12 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Structured Cabling Network</h3>
+                            <p>Operation & Maintenance – Structured Cabling & network infrastructure</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000012-%20Code%20B%20-%20Structured%20Cabling%20Network.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000012-%20Code%20B%20-%20Structured%20Cabling%20Network.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 13 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Elevators O&M (Code A)</h3>
+                            <p>Operation & Maintenance – Elevators & vertical transportation</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000013-Code%20A%20-%204.09%20Elevators%20O_M%20Manual.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000013-Code%20A%20-%204.09%20Elevators%20O_M%20Manual.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 14 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Public Address System & Background Music</h3>
+                            <p>Operation & Maintenance – PA/BGM system · amplifiers & speakers</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000014-%20Code%20B%20-%20Public%20Address%20System%20_%20Background%20Music.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000014-%20Code%20B%20-%20Public%20Address%20System%20_%20Background%20Music.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 15 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Lightning Control System</h3>
+                            <p>Operation & Maintenance – Lightning control & surge protection</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000015-%20Code%20B%20-%20Lightning%20Control%20System.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000015-%20Code%20B%20-%20Lightning%20Control%20System.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 16 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Closed Circuit Television System (CCTV)</h3>
+                            <p>Operation & Maintenance – CCTV · cameras & recording</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000016-%20Code%20B%20-%20Closed%20Circuit%20Television%20System.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000016-%20Code%20B%20-%20Closed%20Circuit%20Television%20System.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 17 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Access Control System</h3>
+                            <p>Operation & Maintenance – Access control · readers & controllers</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000017-%20Code%20B%20-%20Access%20Conotrol%20System.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000017-%20Code%20B%20-%20Access%20Conotrol%20System.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 18 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Building Management System (BMS)</h3>
+                            <p>Operation & Maintenance – BMS · automation & monitoring</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000018-%20Code%20B%20-%20Building%20Management%20System.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000018-%20Code%20B%20-%20Building%20Management%20System.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 19 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Active Network Equipment</h3>
+                            <p>Operation & Maintenance – Switches, routers & network devices</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000021-%20Code%20B%20-%20Active%20Network%20Equipment.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000021-%20Code%20B%20-%20Active%20Network%20Equipment.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 20 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Call for Assistance</h3>
+                            <p>Operation & Maintenance – Emergency call & assistance system</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000022-%20Code%20B%20-%20Call%20for%20Assistance.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000022-%20Code%20B%20-%20Call%20for%20Assistance.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 21 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Wireless Communication System</h3>
+                            <p>Operation & Maintenance – DAS / wireless network</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000023-%20Code%20B%20-%20Wireless%20Communication%20System.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000023-%20Code%20B%20-%20Wireless%20Communication%20System.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 22 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Automatic Number Plate Recognition (ANPR)</h3>
+                            <p>Operation & Maintenance – ANPR system for parking & security</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000024-Code%20B%20-%20Automatic%20Number%20Plate%20Recognition.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000024-Code%20B%20-%20Automatic%20Number%20Plate%20Recognition.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 23 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Fire Detection & Alarm System (FDAS)</h3>
+                            <p>Operation & Maintenance – FDAS · detectors, panels & alarms</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000025-Code%20B%20-%204.02%20Fire%20Detection%20_%20Alarm%20System%20(FDAS)%20O_M%20Manual.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000025-Code%20B%20-%204.02%20Fire%20Detection%20_%20Alarm%20System%20(FDAS)%20O_M%20Manual.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                    <!-- Card 24 -->
+                    <div class="pdf-card">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf file-icon-large"></i>
+                            <span class="file-badge"><i class="fas fa-tools"></i> O&M</span>
+                        </div>
+                        <div class="pdf-info">
+                            <h3>Car Parking Management & Guidance System</h3>
+                            <p>Operation & Maintenance – Parking guidance, gate barriers & digital signage</p>
+                            <div class="pdf-meta">
+                                <span class="meta-item"><i class="far fa-file-pdf"></i> O&M Document</span>
+                                <span class="meta-item"><i class="far fa-calendar-alt"></i> 2025</span>
+                            </div>
+                        </div>
+                        <div class="pdf-actions">
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000026-%20Code%20B%20-%204.10%20Car%20Parking%20Management%20_%20Guidance%20System,%20Gate%20Barriers,%20Digital%20Signage%20O_M%20Manual.PDF" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
+                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-CML-MAN-EL-000026-%20Code%20B%20-%204.10%20Car%20Parking%20Management%20_%20Guidance%20System,%20Gate%20Barriers,%20Digital%20Signage%20O_M%20Manual.PDF" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lighting drawings section (unchanged) -->
             <section class="pdf-section" id="lighting-section">
                 <div class="section-head">
                     <h2><i class="fas fa-lightbulb" style="margin-right: 12px; color: #f5b342;"></i>Lighting Layouts</h2>
                     <span class="section-count" id="lighting-count">5 drawings</span>
                 </div>
                 <div class="pdf-grid" id="lighting-grid">
-                    <!-- Card 1 : B1 -->
-                    <div class="pdf-card" data-title="Basement 1 Lighting" data-desc="basement lighting layout">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-15</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 1</h3>
-                            <p>Lighting floor plan · detailed layout & dimensions</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B1-0512401-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B1-0512401-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
-                        </div>
+                    <div class="pdf-card">
+                        <div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-15</span></div>
+                        <div class="pdf-info"><h3>Basement 1</h3><p>Lighting floor plan · detailed layout & dimensions</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div>
+                        <div class="pdf-actions"><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B1-0512401-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B1-0512401-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a></div>
                     </div>
-                    <!-- Card 2 : B2 -->
-                    <div class="pdf-card" data-title="Basement 2 Lighting">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-10</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 2</h3>
-                            <p>Lighting floor plan · detailed layout & dimensions</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B2-0512301-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B2-0512301-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
-                        </div>
+                    <div class="pdf-card">
+                        <div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-10</span></div>
+                        <div class="pdf-info"><h3>Basement 2</h3><p>Lighting floor plan · detailed layout & dimensions</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div>
+                        <div class="pdf-actions"><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B2-0512301-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-SDW-EL-2B2-0512301-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a></div>
                     </div>
-                    <!-- Card 3 : B3 (unavailable) -->
-                    <div class="pdf-card" data-title="Basement 3 Lighting">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large" style="color:#9aaebb;"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-05</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 3</h3>
-                            <p>Lighting plan · not yet available</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                                <span class="meta-item"><i class="far fa-ban"></i> Pending</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="#" class="btn btn-view disabled"><i class="far fa-eye-slash"></i> Not Available</a>
-                            <a href="#" class="btn btn-download disabled"><i class="fas fa-download"></i> Not Available</a>
-                        </div>
+                    <div class="pdf-card">
+                        <div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large" style="color:#9aaebb;"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-05</span></div>
+                        <div class="pdf-info"><h3>Basement 3</h3><p>Lighting plan · not yet available</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span><span class="meta-item"><i class="far fa-ban"></i> Pending</span></div></div>
+                        <div class="pdf-actions"><a href="#" class="btn btn-view disabled"><i class="far fa-eye-slash"></i> Not Available</a><a href="#" class="btn btn-download disabled"><i class="fas fa-download"></i> Not Available</a></div>
                     </div>
-                    <!-- Card 4 : B4 -->
-                    <div class="pdf-card" data-title="Basement 4 Lighting">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-12</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 4</h3>
-                            <p>Lighting floor plan · detailed layout & dimensions</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0512101_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0512101_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
-                        </div>
+                    <div class="pdf-card">
+                        <div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-12</span></div>
+                        <div class="pdf-info"><h3>Basement 4</h3><p>Lighting floor plan · detailed layout & dimensions</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div>
+                        <div class="pdf-actions"><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0512101_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0512101_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a></div>
                     </div>
-                    <!-- Card 5 : Ground Floor -->
-                    <div class="pdf-card" data-title="Ground Floor Lighting">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-20</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Ground Floor</h3>
-                            <p>Lighting floor plan · detailed layout & dimensions</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2GR-0512501-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2GR-0512501-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
-                        </div>
+                    <div class="pdf-card">
+                        <div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-20</span></div>
+                        <div class="pdf-info"><h3>Ground Floor</h3><p>Lighting floor plan · detailed layout & dimensions</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div>
+                        <div class="pdf-actions"><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2GR-0512501-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2GR-0512501-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a></div>
                     </div>
                 </div>
             </section>
 
-            <!-- Power drawings section -->
+            <!-- Power drawings section (unchanged) -->
             <section class="pdf-section" id="power-section">
                 <div class="section-head">
                     <h2><i class="fas fa-bolt" style="margin-right: 12px; color: #f56e28;"></i>Power Systems</h2>
                     <span class="section-count" id="power-count">5 drawings</span>
                 </div>
                 <div class="pdf-grid" id="structural-grid">
-                    <!-- B1 Power unavailable -->
-                    <div class="pdf-card">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large" style="color:#9aaebb;"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-15</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 1</h3>
-                            <p>Power plan · not yet available</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                                <span class="meta-item"><i class="far fa-ban"></i> Pending</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="#" class="btn btn-view disabled"><i class="far fa-eye-slash"></i> Not Available</a>
-                            <a href="#" class="btn btn-download disabled"><i class="fas fa-download"></i> Not Available</a>
-                        </div>
-                    </div>
-                    <!-- B2 Power -->
-                    <div class="pdf-card">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-10</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 2</h3>
-                            <p>Power plan · distribution & receptacles</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B2-0506301_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B2-0506301_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
-                        </div>
-                    </div>
-                    <!-- B3 Power -->
-                    <div class="pdf-card">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-05</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 3</h3>
-                            <p>Power plan · distribution & receptacles</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B3-0506201_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B3-0506201_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
-                        </div>
-                    </div>
-                    <!-- B4 Power -->
-                    <div class="pdf-card">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-12</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Basement 4</h3>
-                            <p>Power plan · distribution & receptacles</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0506101_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a>
-                            <a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0506101_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a>
-                        </div>
-                    </div>
-                    <!-- Ground Floor Power unavailable -->
-                    <div class="pdf-card">
-                        <div class="pdf-icon">
-                            <i class="fas fa-file-pdf file-icon-large" style="color:#9aaebb;"></i>
-                            <span class="file-badge"><i class="far fa-clock"></i> 2024-01-20</span>
-                        </div>
-                        <div class="pdf-info">
-                            <h3>Ground Floor</h3>
-                            <p>Power plan · not yet available</p>
-                            <div class="pdf-meta">
-                                <span class="meta-item"><i class="far fa-file"></i> PDF</span>
-                            </div>
-                        </div>
-                        <div class="pdf-actions">
-                            <a href="#" class="btn btn-view disabled"><i class="far fa-eye-slash"></i> Not Available</a>
-                            <a href="#" class="btn btn-download disabled"><i class="fas fa-download"></i> Not Available</a>
-                        </div>
-                    </div>
+                    <div class="pdf-card"><div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large" style="color:#9aaebb;"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-15</span></div><div class="pdf-info"><h3>Basement 1</h3><p>Power plan · not yet available</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span><span class="meta-item"><i class="far fa-ban"></i> Pending</span></div></div><div class="pdf-actions"><a href="#" class="btn btn-view disabled"><i class="far fa-eye-slash"></i> Not Available</a><a href="#" class="btn btn-download disabled"><i class="fas fa-download"></i> Not Available</a></div></div>
+                    <div class="pdf-card"><div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-10</span></div><div class="pdf-info"><h3>Basement 2</h3><p>Power plan · distribution & receptacles</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div><div class="pdf-actions"><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B2-0506301_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B2-0506301_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a></div></div>
+                    <div class="pdf-card"><div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-05</span></div><div class="pdf-info"><h3>Basement 3</h3><p>Power plan · distribution & receptacles</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div><div class="pdf-actions"><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B3-0506201_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B3-0506201_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a></div></div>
+                    <div class="pdf-card"><div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-12</span></div><div class="pdf-info"><h3>Basement 4</h3><p>Power plan · distribution & receptacles</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div><div class="pdf-actions"><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0506101_dwg-A-Layout1.pdf" class="btn btn-view" target="_blank"><i class="far fa-eye"></i> View</a><a href="https://magbujairi.netlify.app/pdfs/DG-BUJ-101-0000-NSM-ASD-EL-2B4-0506101_dwg-A-Layout1.pdf" class="btn btn-download" download><i class="fas fa-download"></i> Download</a></div></div>
+                    <div class="pdf-card"><div class="pdf-icon"><i class="fas fa-file-pdf file-icon-large" style="color:#9aaebb;"></i><span class="file-badge"><i class="far fa-clock"></i> 2024-01-20</span></div><div class="pdf-info"><h3>Ground Floor</h3><p>Power plan · not yet available</p><div class="pdf-meta"><span class="meta-item"><i class="far fa-file"></i> PDF</span></div></div><div class="pdf-actions"><a href="#" class="btn btn-view disabled"><i class="far fa-eye-slash"></i> Not Available</a><a href="#" class="btn btn-download disabled"><i class="fas fa-download"></i> Not Available</a></div></div>
                 </div>
             </section>
 
@@ -851,75 +1154,43 @@
 
     <footer class="site-footer">
         <div class="wide-container">
-            <div class="footer-left">
-                <p><i class="far fa-copyright" style="margin-right: 6px;"></i>2020-29 Al Majal Alarabi. All rights reserved.</p>
-                <p class="attribution">Interface designed by ARSAM YAQOOB</p>
-            </div>
-            <div class="footer-right">
-                <a class="custom-logo-link" href="https://mag-sa.com/">
-                    <img src="https://mag-sa.com/wp-content/uploads/2024/06/Logo-color-1.svg" alt="MAG">
-                </a>
-            </div>
+            <div class="footer-left"><p><i class="far fa-copyright" style="margin-right: 6px;"></i>2020-29 Al Majal Alarabi. All rights reserved.</p><p class="attribution">Interface designed by ARSAM YAQOOB</p></div>
+            <div class="footer-right"><a class="custom-logo-link" href="https://mag-sa.com/"><img src="https://mag-sa.com/wp-content/uploads/2024/06/Logo-color-1.svg" alt="MAG"></a></div>
         </div>
     </footer>
 </div>
 
-<!-- Modal Popup: Project Selector (BCP / BT) -->
+<!-- Modal Popup: Project Selector -->
 <div id="projectModal" class="project-modal">
     <div class="modal-container">
-        <div class="modal-header">
-            <h3><i class="fas fa-layer-group" style="margin-right: 10px; color:#f56e28;"></i> Select Project</h3>
-            <button class="modal-close" id="closeModalBtn" aria-label="Close"><i class="fas fa-times"></i></button>
-        </div>
+        <div class="modal-header"><h3><i class="fas fa-layer-group" style="margin-right: 10px; color:#f56e28;"></i> Select Project</h3><button class="modal-close" id="closeModalBtn" aria-label="Close"><i class="fas fa-times"></i></button></div>
         <div class="modal-body">
             <div class="project-options">
-                <!-- BCP option (current) -->
-                <div class="project-card" id="selectBCP">
-                    <div class="project-info">
-                        <div class="project-icon"><i class="fas fa-building"></i></div>
-                        <div class="project-text">
-                            <h4>BCP <span class="project-badge-current">Active</span></h4>
-                            <p>Current library</p>
-                        </div>
-                    </div>
-                    <div class="chevron-icon"><i class="fas fa-check-circle" style="color:#2c8c5c;"></i></div>
-                </div>
-                <!-- BT option (switch) -->
-                <div class="project-card" id="selectBT">
-                    <div class="project-info">
-                        <div class="project-icon"><i class="fas fa-draw-polygon"></i></div>
-                        <div class="project-text">
-                            <h4>Bujairi Terrace</h4>
-                            <p>Switch to BT portal</p>
-                        </div>
-                    </div>
-                    <div class="chevron-icon"><i class="fas fa-arrow-right"></i></div>
-                </div>
+                <div class="project-card" id="selectBCP"><div class="project-info"><div class="project-icon"><i class="fas fa-building"></i></div><div class="project-text"><h4>BCP <span class="project-badge-current">Active</span></h4><p>Current drawing library · Electrical & Lighting</p></div></div><div class="chevron-icon"><i class="fas fa-check-circle" style="color:#2c8c5c;"></i></div></div>
+                <div class="project-card" id="selectBT"><div class="project-info"><div class="project-icon"><i class="fas fa-draw-polygon"></i></div><div class="project-text"><h4>BT Project</h4><p>Switch to BT drawings portal</p></div></div><div class="chevron-icon"><i class="fas fa-arrow-right"></i></div></div>
             </div>
-
+            <div class="modal-footer-note"><i class="fas fa-info-circle"></i> Click "BT Project" to open external library</div>
         </div>
     </div>
 </div>
 
 <script>
-    (function(){
-        "use strict";
-
-        // --- Existing search functionality ---
+    (function() {
+        // Search functionality for all static cards
         const searchInput = document.getElementById('pdf-search');
         const noResultsDiv = document.getElementById('no-results');
         
         function updateSectionCounts() {
-            document.querySelectorAll('.pdf-section').forEach(section => {
-                const visibleCards = Array.from(section.querySelectorAll('.pdf-card')).filter(c => c.style.display !== 'none');
+            const sections = document.querySelectorAll('.pdf-section');
+            sections.forEach(section => {
+                const visibleCards = Array.from(section.querySelectorAll('.pdf-card')).filter(card => card.style.display !== 'none');
+                const totalCards = section.querySelectorAll('.pdf-card').length;
                 const countSpan = section.querySelector('.section-count');
                 if (countSpan) {
-                    const total = section.querySelectorAll('.pdf-card').length;
-                    const visible = visibleCards.length;
-                    if (visible === total) {
-                        countSpan.textContent = total + ' drawings';
+                    if (visibleCards.length === totalCards) {
+                        countSpan.textContent = totalCards + (section.id === 'om-section-container' ? ' manuals' : ' drawings');
                     } else {
-                        countSpan.textContent = visible + ' / ' + total + ' drawings';
+                        countSpan.textContent = visibleCards.length + ' / ' + totalCards + (section.id === 'om-section-container' ? ' manuals' : ' drawings');
                     }
                 }
                 if (visibleCards.length === 0) {
@@ -929,121 +1200,63 @@
                 }
             });
         }
-
+        
         function performSearch(term) {
-            const cards = document.querySelectorAll('.pdf-card');
+            const allCards = document.querySelectorAll('.pdf-card');
             let visibleCount = 0;
             const lowerTerm = term.trim().toLowerCase();
-            
-            cards.forEach(card => {
+            allCards.forEach(card => {
                 const titleEl = card.querySelector('h3');
                 const descEl = card.querySelector('.pdf-info p');
+                const metaEl = card.querySelector('.pdf-meta');
                 const title = titleEl ? titleEl.textContent.toLowerCase() : '';
                 const desc = descEl ? descEl.textContent.toLowerCase() : '';
-                const metaText = card.querySelector('.pdf-meta')?.textContent.toLowerCase() || '';
-                
-                const matches = title.includes(lowerTerm) || desc.includes(lowerTerm) || metaText.includes(lowerTerm);
-                if (lowerTerm === '') {
-                    card.style.display = '';
-                    visibleCount++;
-                } else {
-                    card.style.display = matches ? '' : 'none';
-                    if (matches) visibleCount++;
-                }
+                const metaText = metaEl ? metaEl.textContent.toLowerCase() : '';
+                const matches = (lowerTerm === '') || title.includes(lowerTerm) || desc.includes(lowerTerm) || metaText.includes(lowerTerm);
+                card.style.display = matches ? '' : 'none';
+                if (matches) visibleCount++;
             });
-
             updateSectionCounts();
-
             if (visibleCount === 0 && lowerTerm !== '') {
                 noResultsDiv.style.display = 'block';
             } else {
                 noResultsDiv.style.display = 'none';
             }
         }
-
+        
         if (searchInput) {
             let debounceTimer;
             searchInput.addEventListener('input', function() {
                 clearTimeout(debounceTimer);
                 debounceTimer = setTimeout(() => {
                     performSearch(this.value);
-                }, 250);
+                }, 200);
             });
-            updateSectionCounts();
         }
-
+        
+        // disable disabled buttons
         document.querySelectorAll('.btn.disabled').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                return false;
-            });
+            btn.addEventListener('click', (e) => e.preventDefault());
         });
-
-        // --- Modal / Popup Logic for Project Switcher ---
+        
+        // Modal logic
         const modal = document.getElementById('projectModal');
         const openBtn = document.getElementById('projectSwitcherBtn');
         const closeModalBtn = document.getElementById('closeModalBtn');
         const selectBCP = document.getElementById('selectBCP');
         const selectBT = document.getElementById('selectBT');
-
-        function openModal() {
-            if (modal) {
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-        }
-        function closeModal() {
-            if (modal) {
-                modal.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        }
-
-        // Close modal on backdrop click
-        if (modal) {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-        }
-
-        if (openBtn) {
-            openBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                openModal();
-            });
-        }
-        if (closeModalBtn) {
-            closeModalBtn.addEventListener('click', closeModal);
-        }
-
-        // BCP Option: just close modal (already on BCP project)
-        if (selectBCP) {
-            selectBCP.addEventListener('click', () => {
-                closeModal();
-                // Optional subtle feedback (already on BCP)
-                const badge = openBtn;
-                if (badge) {
-                    badge.style.transform = 'scale(0.98)';
-                    setTimeout(() => { if(badge) badge.style.transform = ''; }, 150);
-                }
-            });
-        }
-
-        // BT Option: redirect to https://magbujairi.netlify.app/
-        if (selectBT) {
-            selectBT.addEventListener('click', () => {
-                window.location.href = 'https://magbujairi.netlify.app/';
-            });
-        }
-
-        // ESC key closes modal
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-                closeModal();
-            }
-        });
+        
+        function openModal() { if (modal) { modal.classList.add('active'); document.body.style.overflow = 'hidden'; } }
+        function closeModal() { if (modal) { modal.classList.remove('active'); document.body.style.overflow = ''; } }
+        if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+        if (openBtn) openBtn.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+        if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+        if (selectBCP) selectBCP.addEventListener('click', () => { closeModal(); });
+        if (selectBT) selectBT.addEventListener('click', () => { window.location.href = 'https://magbujairi.netlify.app/'; });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal && modal.classList.contains('active')) closeModal(); });
+        
+        // Initial counts
+        setTimeout(() => { updateSectionCounts(); }, 50);
     })();
 </script>
 </body>
